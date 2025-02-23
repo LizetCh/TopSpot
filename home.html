@@ -3,9 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="navbar">
+    <ul>
+      <li><a>Dashboard</a></li>
+      <li><img></li>
+      
+    </ul>
+  </nav>
+  <div class="dashboard-page">
+
+    
+
+    <div class="dashboard-container">
+      <h1>Dashboard</h1>
+        <div class="new-song-container">
+          <div class="new-song-img-placeholder">
+            <img class="new-song-img" src="img/song-placeholder.png" alt="Song image placeholder">
+          </div>
+          <form class="new-song-form" method="post">
+            <div class="new-song-rating-container"> 
+            
+              <!-- Buscador de canciones -->
+              <input type="search" name="song" class="search-song-input" placeholder="Search song ..." required>
+                
+                <!-- TO DO: Sistema de estrellas -->
+              <div class="star-rating">
+                <img class="star" src="img/star-filled.png">
+                <img class="star" src="img/star-filled.png">
+                <img class="star" src="img/star-filled.png">
+                <img class="star" src="img/star-filled.png">
+                <img class="star" src="img/star-filled.png">
+              </div>
+
+              <!-- Comentarios -->
+              <textarea id="songComment" class="new-song-comment" placeholder="Añade un comentario..."></textarea>
+
+            </div>
+            <div class="submit-song-img-container">
+              <img class="submit-song-img" src="img/checkmark-enabled.png">
+            </div>
+          </form>
+      </div> <!--dashboard-songs-container-->
+      
+      <h2>Activity</h2>
+      <!--Container to display all activity songs-->
+      <div class="users-activity-songs-container">
+
+        <!--individual user activity 1-->
+        <div class="activity-container">
+          <div class="user-img-container">
+            <img class="user-img" src="img/user-placeholder.jpeg" alt="Friend image">
+          </div>
+          <div class="elipse"></div>
+          <div class="elipse2"></div>
+          <div class="song-activity-container">
+            <div class="song-img-container">
+              <img class="song-img" src="img/song-placeholder.png" alt="Song image">
+            </div>
+            <div class="song-info-container">
+              <div class="song-header-container">
+                <h3>Song Name</h3>
+
+                <div class="star-rating2">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                </div>
+
+              </div>
+              <p>Artist</p>
+              <p>This is a comment</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!--individual user activity 2-->
+        <div class="activity-container">
+          <div class="user-img-container">
+            <img class="user-img" src="img/user-placeholder.jpeg" alt="Friend image">
+          </div>
+          <div class="elipse"></div>
+          <div class="elipse2"></div>
+          <div class="song-activity-container">
+            <div class="song-img-container">
+              <img class="song-img" src="img/song-placeholder.png" alt="Song image">
+            </div>
+            <div class="song-info-container">
+              <div class="song-header-container">
+                <h3>Song Name</h3>
+
+                <div class="star-rating2">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                </div>
+
+              </div>
+              <p>Artist</p>
+              <p>This is a comment</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!--individual user activity 3-->
+        <div class="activity-container">
+          <div class="user-img-container">
+            <img class="user-img" src="img/user-placeholder.jpeg" alt="Friend image">
+          </div>
+          <div class="elipse"></div>
+          <div class="elipse2"></div>
+          <div class="song-activity-container">
+            <div class="song-img-container">
+              <img class="song-img" src="img/song-placeholder.png" alt="Song image">
+            </div>
+            <div class="song-info-container">
+              <div class="song-header-container">
+                <h3>Song Name</h3>
+
+                <div class="star-rating2">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                </div>
+
+              </div>
+              <p>Artist</p>
+              <p>This is a comment</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!--individual user activity 4-->
+        <div class="activity-container">
+          <div class="user-img-container">
+            <img class="user-img" src="img/user-placeholder.jpeg" alt="Friend image">
+          </div>
+          <div class="elipse"></div>
+          <div class="elipse2"></div>
+          <div class="song-activity-container">
+            <div class="song-img-container">
+              <img class="song-img" src="img/song-placeholder.png" alt="Song image">
+            </div>
+            <div class="song-info-container">
+              <div class="song-header-container">
+                <h3>Song Name</h3>
+
+                <div class="star-rating2">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                </div>
+
+              </div>
+              <p>Artist</p>
+              <p>This is a comment</p>
+            </div>
+
+          </div>
+        </div>
+        
+        <!--individual user activity 5-->
+        <div class="activity-container">
+          <div class="user-img-container">
+            <img class="user-img" src="img/user-placeholder.jpeg" alt="Friend image">
+          </div>
+          <div class="elipse"></div>
+          <div class="elipse2"></div>
+          <div class="song-activity-container">
+            <div class="song-img-container">
+              <img class="song-img" src="img/song-placeholder.png" alt="Song image">
+            </div>
+            <div class="song-info-container">
+              <div class="song-header-container">
+                <h3>Song Name</h3>
+
+                <div class="star-rating2">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                  <img class="star" src="img/star-filled.png">
+                </div>
+
+              </div>
+              <p>Artist</p>
+              <p>This is a comment</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div> <!--users-activity-songs-container-->
+    </div> <!--dashboard-container-->
+  </div> <!--dashboard-page-->
   
 </body>
 </html>
