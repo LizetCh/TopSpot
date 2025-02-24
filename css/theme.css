@@ -1,0 +1,9 @@
+:root {
+  --color-primary: #1DB954;
+  --color-very-dark: black;
+  --color-dark-gray: #212121;
+  --color-gray: #535353;
+  --color-light-gray: #b3b3b3;
+  --color-tertiary: white;
+  --family-primary: 'Verdana', sans-serif;
+}

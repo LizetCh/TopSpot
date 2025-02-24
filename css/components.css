@@ -1,0 +1,11 @@
+
+.navbar {
+  height: 8vh;
+  width: 100%;
+  border-bottom: solid 0.05rem;
+  border-color: var(--color-tertiary);
+  background-color: var(--color-very-dark);
+  top: 0;
+  position: sticky;
+
+}
