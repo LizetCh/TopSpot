@@ -1,11 +1,11 @@
 
 /*navbar*/
 
-#dashboard-bttn, .dashboard-bttn {
+#dashboard-bttn, .nav-links .dashboard-bttn {
   background-color: var(--color-tertiary);
 }
 
-#dashboard-bttn, .dashboard-bttn a {
+#dashboard-bttn, .nav-links .dashboard-bttn {
   color: var(--color-very-dark);
 }
 
@@ -217,3 +217,11 @@
       justify-content: flex-start;
       height: 1rem;
     }
+
+@media (max-width: 768px) {
+
+
+  .song-img-container {
+    display: none;
+  }
+}
