@@ -1,2 +1,2 @@
 # TopSpot
- Spotify AddOn to rate songs
+ Website to rate songs
