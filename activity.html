@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity</title>
+  <link rel="stylesheet" href="./css/theme.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/activity.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("menu-bttn").addEventListener("click", function () {
+        document.getElementById("nav-links").classList.toggle("show");
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="navbar-container">
+      <button class="menu-bttn" id="menu-bttn">
+        ☰
+      </button>
+      <div class="navbar-menu-bttn">
+        <a href="dashboard.html"><li class="nav-bttn" id="dashboard-bttn">Dashboard</li></a>
+        <a href="activity.html"><li class="nav-bttn" id="activity-bttn">My Activity</li></a>
+      </div>
+      <li class="search-bar">
+        <input type="search" name="search" class="search-song-input" placeholder="Search song ...">
+      </li>
+      <li class="nav-link"><a href="login.html">Log out</a></li>
+      <li class="nav-profile"><a><img src="./img/user-placeholder.jpeg"></a></li>  
+    </ul>
+  </nav>
+  <!--responsive bar-->
+  <nav class="nav-links" id="nav-links">
+    <ul class="nav-links-container">
+      <div class="navbar-menu-bttn">
+        <li class="nav-bttn dashboard-bttn"><a href="dashboard.html">Dashboard</a></li>
+        <li class="nav-bttn activity-bttn"><a href="activity.html">My Activity</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div style="display: flex; justify-content: center;" class="activity-page">
+    <h2 style="margin-top: 40px;">-- Under construction --</h2>
+  </div>
+  
+</body>
+</html>

@@ -8,21 +8,39 @@
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/dashboard.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("menu-bttn").addEventListener("click", function () {
+        document.getElementById("nav-links").classList.toggle("show");
+      });
+    });
+  </script>
 </head>
 <body>
   
   <nav class="navbar">
     <ul class="navbar-container">
+      <button class="menu-bttn" id="menu-bttn">
+        ☰
+      </button>
       <div class="navbar-menu-bttn">
-        <li class="nav-bttn" id="dashboard-bttn"><a>Dashboard</a></li>
-        <li class="nav-bttn" id="activity-bttn"><a>My Activity</a></li>
+        <a href="dashboard.html"><li class="nav-bttn" id="dashboard-bttn">Dashboard</li></a>
+        <a href="activity.html"><li class="nav-bttn" id="activity-bttn">My Activity</li></a>
       </div>
       <li class="search-bar">
         <input type="search" name="search" class="search-song-input" placeholder="Search song ...">
       </li>
       <li class="nav-link"><a href="login.html">Log out</a></li>
-      <li class="nav-profile"><a><img src="./img/user-placeholder.jpeg"></a></li>
-      
+      <li class="nav-profile"><a><img src="./img/user-placeholder.jpeg"></a></li>  
+    </ul>
+  </nav>
+  <!--responsive bar-->
+  <nav class="nav-links" id="nav-links">
+    <ul class="nav-links-container">
+      <div class="navbar-menu-bttn">
+        <li class="nav-bttn dashboard-bttn"><a href="dashboard.html">Dashboard</a></li>
+        <li class="nav-bttn activity-bttn"><a href="activity.html">My Activity</a></li>
+      </div>
     </ul>
   </nav>
   
@@ -67,27 +85,19 @@
 
         <!--individual user activity 1-->
         <div class="activity-container">
-          <!--User image-->
           <div class="user-img-container">
             <img class="user-img" src="img/user-placeholder.jpeg" alt="Friend image">
           </div>
-          <!--elipses decorations-->
           <div class="elipse"></div>
           <div class="elipse2"></div>
-          <!--Song activity container (gray area)-->
           <div class="song-activity-container">
             <div class="song-img-container">
               <img class="song-img" src="img/song-placeholder.png" alt="Song image">
             </div>
-            <!--Song info-->
             <div class="song-info-container">
-              <h3>Song Name</h3>
-              <p>Artist</p> 
-            </div>
-             <!--Song rating--> 
-            <div class="song-rating-container">
-              <div class="rating-header-container">
-                <h3>Rating title</h3>
+              <div class="song-header-container">
+                <h3>Song Name</h3>
+
                 <div class="star-rating2">
                   <img class="star" src="img/star-filled.png">
                   <img class="star" src="img/star-filled.png">
@@ -95,12 +105,13 @@
                   <img class="star" src="img/star-filled.png">
                   <img class="star" src="img/star-filled.png">
                 </div>
-              </div>
-              <p>Rating coment Lorem ipsum, dolor sit amet consectetur adipisicing elit. s</p>
-            </div>
-          </div>
-            
 
+              </div>
+              <p>Artist</p>
+              <p>This is a comment</p>
+            </div>
+
+          </div>
         </div>
 
 
@@ -234,3 +245,6 @@
   
 </body>
 </html>
+
+
+

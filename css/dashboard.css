@@ -1,11 +1,11 @@
 
 /*navbar*/
 
-#dashboard-bttn {
+#dashboard-bttn, .dashboard-bttn {
   background-color: var(--color-tertiary);
 }
 
-#dashboard-bttn a {
+#dashboard-bttn, .dashboard-bttn a {
   color: var(--color-very-dark);
 }
 

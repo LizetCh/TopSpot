@@ -1,0 +1,10 @@
+
+/*navbar*/
+
+#activity-bttn, .dashboard-bttn {
+  background-color: var(--color-tertiary);
+}
+
+#activity-bttn , .dashboard-bttn a {
+  color: var(--color-very-dark);
+}
