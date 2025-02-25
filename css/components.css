@@ -1,11 +1,67 @@
 
 .navbar {
   height: 8vh;
-  width: 100%;
-  border-bottom: solid 0.05rem;
+  width: 100vw;
   border-color: var(--color-tertiary);
   background-color: var(--color-very-dark);
   top: 0;
   position: sticky;
-
 }
+
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+    .navbar-menu-bttn {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+      .navbar-container a {
+        color: var(--color-tertiary);
+        text-decoration: none;
+        min-width: fit-content;
+      }
+
+      .navbar-container .nav-bttn {
+        background-color: var(--color-dark-gray);
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+      }
+
+
+      .navbar-container .nav-bttn:hover {
+        background-color: var(--color-gray);
+        cursor: pointer;
+      }
+    
+    .navbar-container .search-bar {
+      flex: 1;
+    }
+
+      .search-bar .search-song-input {
+        background-position: 14px 12px;
+        background-size: 1rem;
+        padding-left: 2.5rem;
+      }
+
+    .navbar-container .nav-profile {
+      height: 70%;
+      border-radius: 2rem;
+      overflow: hidden;
+      margin-right: 2rem;
+    }
+
+      .nav-profile img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }

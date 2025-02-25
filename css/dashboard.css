@@ -1,4 +1,13 @@
 
+/*navbar*/
+
+#dashboard-bttn {
+  background-color: var(--color-tertiary);
+}
+
+#dashboard-bttn a {
+  color: var(--color-very-dark);
+}
 
 /*DASHBOARD*/
 
@@ -10,9 +19,9 @@
 }
 
 .dashboard-container {
+  margin-top: 1vh;
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
   width: 85%;
   align-items: flex-start;
   gap: 1rem;

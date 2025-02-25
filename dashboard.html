@@ -10,19 +10,28 @@
   <link rel="stylesheet" href="./css/dashboard.css">
 </head>
 <body>
+  
   <nav class="navbar">
-    <ul>
-      <li><a>Dashboard</a></li>
-      <li><img></li>
+    <ul class="navbar-container">
+      <div class="navbar-menu-bttn">
+        <li class="nav-bttn" id="dashboard-bttn"><a>Dashboard</a></li>
+        <li class="nav-bttn" id="activity-bttn"><a>My Activity</a></li>
+      </div>
+      <li class="search-bar">
+        <input type="search" name="search" class="search-song-input" placeholder="Search song ...">
+      </li>
+      <li class="nav-link"><a href="login.html">Log out</a></li>
+      <li class="nav-profile"><a><img src="./img/user-placeholder.jpeg"></a></li>
       
     </ul>
   </nav>
+  
   <div class="dashboard-page">
-
+    
     
 
     <div class="dashboard-container">
-      <h1>Dashboard</h1>
+      <h2>Rate a New Song</h2>
         <div class="new-song-container">
           <div class="new-song-img-placeholder">
             <img class="new-song-img" src="img/song-placeholder.png" alt="Song image placeholder">

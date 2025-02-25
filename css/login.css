@@ -21,6 +21,7 @@
   box-shadow: 0 0 3rem 0 var(--color-primary);
   padding: 1rem 1rem;
   text-align: center;
+  min-width: 15rem;
 }
 
 .login-form {
