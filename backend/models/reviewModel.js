@@ -2,11 +2,6 @@ const mongoose = require('mongoose');
 
 const reviewSchema = new mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-  itemType: {
-    type: String,
-    enum: ['album', 'song'],
-    required: true,
-  },
   itemId: {
     type: String,
     required: true,
