@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const User = require('../models/user');
+const User = require('../models/userModel');
 
 // crear usuario
 const createUser = asyncHandler(async (req, res) => {
@@ -63,7 +63,7 @@ const deleteUser = asyncHandler(async (req, res) => {
     throw new Error('Usuario no encontrado');
   }
 
-  await user.deleteOne();
+  await User.findByIdAndDelete();
   res.status(200).json({"mensaje": `Usuario con id ${req.params.id} eliminado`});
 });
 

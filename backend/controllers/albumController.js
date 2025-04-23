@@ -1,10 +1,10 @@
 const asyncHandler = require('express-async-handler');
-const Album = require('../models/album.js');
+const Album = require('../models/albumModel');
 
 // crear album
 const createAlbum = asyncHandler(async (req, res) => {
 
-  if (!spotifyId || !title || !artist) {
+  if (!req.body.spotifyId || !req.body.title || !req.body.artist) {
     res.status(400);
     throw new Error('Faltan campos obligatorios');
   }
@@ -62,7 +62,7 @@ const deleteAlbum = asyncHandler(async (req, res) => {
   }
 
   // Elimina el álbum
-  await album.remove();
+  await Album.findByIdAndDelete();
 
   res.status(200).json({"mensaje": `Album con id ${req.params.id} eliminado`});
 });
