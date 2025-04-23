@@ -17,6 +17,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api/songs', require('./routes/songRoutes'));
 app.use(errorHandler);
 
+app.use('/api/albums', require('./routes/albumRoutes'));
+app.use(errorHandler);
+
+app.use('/api/users', require('./routes/userRoutes'));
+app.use(errorHandler);
+
+app.use('/api/reviews', require('./routes/reviewRoutes'));
+app.use(errorHandler);
+
 app.listen(port, () => console.log(`Servidor inicado en el puerto ${port}`));
 
 
