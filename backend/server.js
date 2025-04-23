@@ -10,7 +10,11 @@ const { errorHandler } = require('./middleware/errorMiddleware.js');
 connectDB();
 
 const app = express(); 
+
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+app.use('/api/songs', require('./routes/songRoutes'));
 app.use(errorHandler);
 
 app.listen(port, () => console.log(`Servidor inicado en el puerto ${port}`));

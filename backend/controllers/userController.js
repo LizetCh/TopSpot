@@ -1,9 +1,10 @@
 const asyncHandler = require('express-async-handler');
-const User = require('../models/userModel');
+const User = require('../models/user');
 
 // crear usuario
 const createUser = asyncHandler(async (req, res) => {
   const { username, email, password } = req.body;
+  console.log(req.body);
 
   if (!username || !email || !password) {
     res.status(400);

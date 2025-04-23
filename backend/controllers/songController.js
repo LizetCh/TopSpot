@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const Song = require('../models/song');
+const Song = require('../models/songModel');
 
 // crear una canción 
 const createSong = asyncHandler( async (req, res) => {
@@ -52,7 +52,7 @@ const deleteSong = asyncHandler( async (req,res) => {
     res.status(404);
     throw new Error('Canción no encontrada');
   }
-  await song.remove();
+  await Song.findByIdAndDelete(req.params.id);
   res.status(200).json({ "mensaje": `Canción con id ${req.params.id} eliminada`});
 })
 

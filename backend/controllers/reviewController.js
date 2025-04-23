@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const Review = require('../models/reviewModel');
+const Review = require('../models/review.js');
 
 // crear review
 const createReview = asyncHandler(async (req, res) => {

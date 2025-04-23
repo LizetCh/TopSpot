@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const Album = require('../models/album');
+const Album = require('../models/album.js');
 
 // crear album
 const createAlbum = asyncHandler(async (req, res) => {
