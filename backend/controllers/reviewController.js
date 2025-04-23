@@ -1,18 +1,17 @@
 const asyncHandler = require('express-async-handler');
-const Review = require('../models/review.js');
+const Review = require('../models/reviewModel');
 
 // crear review
 const createReview = asyncHandler(async (req, res) => {
-  const { user, itemType, itemId, rating, comment } = req.body;
+  const { user, itemId, rating, comment } = req.body;
 
-  if (!user || !itemType || !itemId || !rating) {
+  if (!user || !itemId || !rating) {
     res.status(400);
     throw new Error('Faltan campos obligatorios');
   }
 
   const review = await Review.create({
     user,
-    itemType,
     itemId,
     rating,
     comment,
