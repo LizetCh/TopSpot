@@ -18,11 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const username = review.user?.username || "Usuario";
             const title = review.item?.title || "Título desconocido";
             const artist = review.item?.artist || "";
+            const profilePicUrl = review.user.profilePic 
+            ? `http://localhost:8000/${review.user.profilePic}`
+            : "../img/user-placeholder.jpeg";
 
             div.innerHTML = `
               <div class="activity-container">
                 <div class="user-img-container">
-                  <img class="user-img" src="../img/user-placeholder.jpeg" alt="Friend image">
+                  <img class="user-img" src=${profilePicUrl} alt="Friend image">
                 </div>
                 <div class="elipse"></div>
                 <div class="elipse2"></div>

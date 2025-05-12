@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userId = localStorage.getItem("userId");
 
   if (!userId) {
-    window.location.href = "login"; 
+    window.location.href = "login.html"; 
   } else {
     console.log('Sesión iniciada, userId:', userId);
   }
@@ -16,6 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.removeItem("userId");
       window.location.href = "login.html";
     });
+  }
+
+
+
+  // Función para cargar la imagen de perfil
+  const profilePic = localStorage.getItem("profilePic");
+  const profilePicElement = document.getElementById("profile-pic");
+
+  if (profilePic && profilePicElement) {
+    profilePicElement.src = `http://localhost:8000/${profilePic}`;
   }
 
 });

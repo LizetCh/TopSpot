@@ -6,6 +6,8 @@
   background-color: var(--color-very-dark);
   top: 0;
   position: sticky;
+  display: flex;
+  justify-content: center;
 }
 
   .navbar-container {
@@ -14,9 +16,10 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 100%;
-    padding: 0 1rem;
+    width: 80%;
     gap: 1rem;
+    align-items: center;
+    
   }
 
     .menu-bttn {
@@ -59,14 +62,20 @@
     
     .navbar-container .search-bar {
       flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
       .search-bar .search-song-input {
-        background-position: 14px 12px;
+        background-position: 14px 8px;
         background-size: 1rem;
         padding-left: 2.5rem;
         background-image:url(../img/search-icon.png);
         background-repeat: no-repeat;
+        max-width: 80%;
+        height: 60%;
       }
 
     .navbar-container .nav-profile {
@@ -75,6 +84,7 @@
       border-radius: 2rem;
       overflow: hidden;
       margin-right: 2rem;
+
       
     }
 

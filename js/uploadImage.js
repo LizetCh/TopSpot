@@ -1,6 +1,10 @@
 // funciones para subir imagenes de perfil y cover
 // POR AHORA SOLO SIRVE DE MANERA LOCAL
 document.addEventListener("DOMContentLoaded", () => {
+  
+  
+  
+  
   const uploadButton = document.getElementById("upload-btn");
 
   uploadButton.addEventListener("click", () => {
@@ -27,11 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("profilePic", data.profilePic);
         alert("Imagen subida con éxito");
         
-
+        // Actualizar la imagen de perfil en la página
+        const profilePicElement = document.getElementById("profile-pic");
+        if (profilePicElement) {
+          profilePicElement.src = `http://localhost:8000/${data.profilePic}`;
+        }
+        //limpiar input
+        fileInput.value = "";
       })
       .catch(error => {
         console.error("Error al subir imagen:", error);
-        alert("Error al subir imagen");
+        alert("Error al subir imagen.");
       });
   });
 });
