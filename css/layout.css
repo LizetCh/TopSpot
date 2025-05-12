@@ -9,7 +9,6 @@ body {
   font-family: var(--family-primary);
   background-color: var(--color-very-dark);
   color: var(--color-tertiary);
-  width: 100%;
   overflow-x: hidden;
 }
 

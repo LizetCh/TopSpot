@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile</title>
-  <link rel="stylesheet" href="./css/theme.css">
-  <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/components.css">
-  <link rel="stylesheet" href="./css/profile.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/profile.css">
+  <script src="../js/script.js"></script>
+  <script src="../js/uploadImage.js"></script>
   <script>
+
     document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("menu-bttn").addEventListener("click", function () {
         document.getElementById("nav-links").classList.toggle("show");
@@ -30,8 +33,8 @@
       <li class="search-bar">
         <input type="search" name="search" class="search-song-input" placeholder="Search song ...">
       </li>
-      <li class="nav-link"><a href="login.html">Log out</a></li>
-      <li class="nav-profile"><a href="profile.html"><img src="./img/user-placeholder.jpeg"></a></li>  
+      <li class="nav-link"><a id="logoutBtn">Log out</a></li>
+      <li class="nav-profile"><a href="profile.html"><img src="../img/user-placeholder.jpeg"></a></li>  
     </ul>
   </nav>
   <!--responsive bar-->
@@ -43,6 +46,23 @@
       </div>
     </ul>
   </nav>
+
+  <div class="profile-page">
+    <!--upload profile picture-->
+    <div class="upload-container">
+      <h2>Subir imagen de perfil</h2>
+      <input type="file" id="fileInput" accept="image/*">
+      <br><br>
+      <button id="upload-btn">Subir</button>
+    </div>
+  </div>
+
+  
+  
+
+  
+      
+
 
   <div style="display: flex; justify-content: center;" class="activity-page">
     <h2 style="margin-top: 40px;">-- Under construction --</h2>

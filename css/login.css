@@ -14,12 +14,13 @@
   justify-content: space-around;
   align-items: center;
   height: auto;
-  width: 30%;
-  min-height: 50vh;
+  width: 60%;
+  max-width: 25rem;
+  
   border-radius: 2.5rem;
   background-color: var(--color-very-dark);
   box-shadow: 0 0 3rem 0 var(--color-primary);
-  padding: 1rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   min-width: 15rem;
 }
@@ -34,8 +35,13 @@
   gap: 1rem;
 }
 
+h1 {
+  margin-bottom: 1rem;
+}
+
 .login-form h3 {
   align-self: flex-start;
+  
 }
 
 
@@ -43,8 +49,11 @@
   width: 50%;
   align-self: center;
   margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: .80rem;
 }
 
 .login-container a {
   font-size: small;
+  
 }

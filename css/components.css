@@ -71,9 +71,11 @@
 
     .navbar-container .nav-profile {
       height: 70%;
+      aspect-ratio: 1/1;
       border-radius: 2rem;
       overflow: hidden;
       margin-right: 2rem;
+      
     }
 
       .nav-profile img {
