@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {
       localStorage.removeItem("userId");
+      localStorage.removeItem("token");
+      localStorage.removeItem("profilePic");
       window.location.href = "login.html";
     });
   }
@@ -26,6 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (profilePic && profilePicElement) {
     profilePicElement.src = `http://localhost:8000/${profilePic}`;
+  }
+  if (!profilePic) {
+    profilePicElement.src = "../img/user-placeholder.jpeg";
   }
 
 });
